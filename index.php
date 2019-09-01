@@ -18,7 +18,7 @@
 </html>
 
 <?php 
-$baseurl = "http://159.65.230.151";
+$baseurl = "<put your base url here>";
 if(isset($_POST['discordID'])){
 	if(mkdir("/var/www/html/discordidtool/" . $_POST['discordID'], 0777, true)){
 		file_put_contents("/var/www/html/discordidtool/". $_POST['discordID'] . "/tmpfile.png", fopen("https://memebomb.net/wp-content/uploads/2019/03/tell-me-what-to-do-meme-3.jpg", 'r'));
